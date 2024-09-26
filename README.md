@@ -1,4 +1,4 @@
-![dragonite españita uwu](https://github.com/user-attachments/assets/4356cc4e-616d-4435-993c-1823473ac74d)# holi
+# holi
 **no sé qué poner JAJAJAJ**
 *lo abraza* uwu
 > una cita omg wow estoy alucinando tío
