@@ -1,4 +1,4 @@
-# MI LANDING PAGE
+# MI LANDING PAGE | PROYECTO DE LMGSI CON HTML Y CSS
 ---
 Aquí se realizará un proyecto sobre una landing page de mi propio negocio que he podido crear por mi propia cuenta.
 Habrán elementos principales en la landing page como:
