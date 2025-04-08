@@ -13,7 +13,6 @@ body {
     "mainUno" 
     "herramientasMain" 
     "galeriaMain" 
-    "opinionesMain" 
     "footerMain";
     width: 100%;
     background-image: url(background.jpg);
@@ -22,6 +21,21 @@ body {
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    background-color: rgba(54, 54, 54, 0.75);
+    padding: 10px;
+}
+
+h2 {
+    background-color: rgba(54, 54, 54, 0.75);
+    padding: 10px;
+}
+
+p {
+    background-color: rgba(54, 54, 54, 0.75);
+    padding: 10px;
 }
 
 .cabeceraMain {
@@ -53,6 +67,8 @@ a {
 
 .mainUno {
     display: grid;
+    grid-area: mainUno;
+    margin: 100px;
     justify-content: center;
 }
 
@@ -75,11 +91,24 @@ a {
     transform: scale(1.1);
 }
 
+.herramientasMain {
+    grid-area: herramientasMain;
+    margin: 100px
+}
+
+.presentacionHM {
+    display: flex;
+}
+
+.presentacionHM a {
+    color: rgb(52, 123, 255);
+    text-decoration:underline
+}
+
 .footerMain {
     background-color: aquamarine;
 }
 
-.footerMain p {
+.footerMain text {
     color: black;
 }
-
