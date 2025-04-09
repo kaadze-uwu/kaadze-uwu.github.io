@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Proyecto HTML y CSS</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-        rel="stylesheet">
 </head>
-
 <body>
     <div class="cabeceraMain">
         <div class="logo">
-            <img src="logo_def.png" alt="">
+            <img src="logo_def.png" alt="Logo">
         </div>
-        <div class="menu">
-            <a href="#">Inicio</a>
-            <a href=".presentacionHM">Sobre mí</a>
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
             <a href="#contacto">Contáctame</a>
-            <a href="">Mis trabajos</a>
-        </div>
+            <a href="#trabajos">Mis trabajos</a>
+        </nav>
     </div>
-    <div class="mainUno">
+
+    <div id="inicio" class="mainUno">
         <h1>¡Digitaliza tu empresa con la ayuda de un experto!</h1>
-        <p>Haz que tu negocio crezca con un único y fabuloso sitio web
-            creado por uno de los mejores desarroladores web de toda Granada
-        </p>
+        <p>Haz que tu negocio crezca con un único y fabuloso sitio web creado por uno de los mejores desarrolladores web de toda Granada.</p>
         <div class="mainBoton">
-            <a href="">¡Me quiero poner en contacto!</a>
+            <a href="#contacto">¡ME QUIERO PONER EN CONTACTO!</a>
         </div>
     </div>
-    <div class="herramientasMain">
+
+    <div class="herramientasMain" id="sobre-mi">
         <div class="presentacionHM">
             <div class="presentacionIMG">
-                <img src="logo_def.png" alt="">
+                <img src="logo_def.png" alt="Foto Izan">
             </div>
             <div class="textoPresentacion">
                 <h2>¿Quién soy?</h2>
-                <p>Soy Izan Ramos, desarrollador web autónomo de 18 años. Realizo sitios web para empresas de todo tamaño<br>
-                Realicé un grado superior en Desarollo de Aplicaciones Web. <br><br>
-                Hoy en día, he hecho sitios web para un montón de empresas. <br><br>Puedes encontrar mis trabajos <a href="">haciendo clic aquí.</a></p>
+                <p>Soy Izan Ramos, desarrollador web autónomo de 18 años. Realizo sitios web para empresas de todo tamaño.<br>
+                Realicé un grado superior en Desarrollo de Aplicaciones Web.<br><br>
+                Hoy en día, he hecho sitios web para un montón de empresas.<br><br>
+                Puedes encontrar mis trabajos <a href="#trabajos">haciendo clic aquí</a>.</p>
             </div>
         </div>
+
         <div class="que_usoHM">
             <h2>¿Qué herramientas uso?</h2>
             <p>Para poder realizar los maravillosos sitios web que hago, tan solo utilizo HTML y CSS.</p>
         </div>
     </div>
-    <div class="galeriaMain">
+
+    <div class="galeriaMain" id="trabajos">
         <h2>Mis trabajos más recientes</h2>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <p>Si quieres ver todos mis trabajos...</p>
-        <div class="mainBoton">
-            <a href="#">¡Hazme clic!</a>
+        <img src="trabajo1.jpg" alt="Trabajo 1">
+        <img src="trabajo2.jpg" alt="Trabajo 2">
+        <img src="trabajo3.jpg" alt="Trabajo 3">
+    </div>
+
+    <div class="testimoniosMain">
+        <h2>Opiniones de algunos de mis clientes</h2>
+        <div class="testimonio">
+            <p>"Increíble trabajo, rápido y profesional. Lo recomiendo al 100%" – Marta</p>
+        </div>
+        <div class="testimonio">
+            <p>"Mi sitio web quedó espectacular. Izan realizó justo lo que quería." – Laura Martínez</p>
+        </div>
+        <div class="testimonio">
+            <p>"Atención personalizada y mucha dedicación" – Pedro Rubio</p>
         </div>
     </div>
-    <div class="contactoMain" id="contacto">
 
+    <div class="contactoMain" id="contacto">
+        <h2>Contáctame</h2>
+        <form class="formulario">
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Tu email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
     </div>
+
     <div class="footerMain">
-        <text>Todos los derechos reservados, 2025</text>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>
+        <p>Todos los derechos reservados, 2025</p>
     </div>
 </body>
-
 </html>
