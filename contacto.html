@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto HTML y CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cabeceraMain">
+        <div class="logo">
+            <img src="IMAGENES/logo_def.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="sobre-mi.html">Sobre mí</a>
+            <a href="contacto.html">Contáctame</a>
+            <a href="trabajos.html">Mis trabajos</a>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Contáctame</h1>
+        <p>¡Ponte en contacto conmigo y trabajemos en tu próximo sitio web!</p>
+        <form class="formulario">
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Tu correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Todos los derechos reservados, 2025</p>
+    </div>
+</body>
+</html>
