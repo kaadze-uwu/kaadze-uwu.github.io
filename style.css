@@ -272,6 +272,7 @@ p {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
+    margin-left: 150px;
     margin-top: 10px;
 }
 
