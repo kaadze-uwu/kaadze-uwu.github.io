@@ -266,3 +266,92 @@ p {
 .footer text {
     color: black;
 }
+
+/* Media queries para adaptar el sitio web */
+@media (max-width: 768px) {
+    .cabeceraMain {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .logo img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 120px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    .menu a {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .mainUno {
+        margin: 30px 15px;
+    }
+
+    .presentacionHM {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .galeriaMain img,
+    .galeria img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cabeceraMain {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 130px;
+        margin-right: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .menu a {
+        padding: 12px 18px;
+        font-size: 1rem;
+    }
+
+    .presentacionHM {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .galeriaMain img,
+    .galeria img {
+        width: 48%;
+    }
+
+    .formulario {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
