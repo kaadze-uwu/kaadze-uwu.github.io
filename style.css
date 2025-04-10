@@ -267,6 +267,23 @@ p {
     color: black;
 }
 
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.redes img {
+    width: 35px;
+    transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+    transform: scale(1.2);
+}
+
 /* Media queries para adaptar el sitio web */
 @media (max-width: 768px) {
     .cabeceraMain {
@@ -304,8 +321,7 @@ p {
         gap: 20px;
     }
 
-    .galeriaMain img,
-    .galeria img {
+    .imagenes img {
         width: 100%;
         max-width: 100%;
     }
@@ -345,8 +361,7 @@ p {
         text-align: center;
     }
 
-    .galeriaMain img,
-    .galeria img {
+    .imagenes img {
         width: 48%;
     }
 
