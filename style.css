@@ -272,7 +272,7 @@ p {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
-    margin-left: 150px;
+    margin-left: 450px;
     margin-top: 10px;
 }
 
@@ -331,6 +331,9 @@ p {
         width: 100%;
         padding: 0 20px;
     }
+    .redes {
+        margin-left: 100px
+    }
 }
 
 @media (max-width: 1024px) {
@@ -369,5 +372,8 @@ p {
     .formulario {
         width: 90%;
         margin: 0 auto;
+    }
+    .redes {
+        margin-left: 200px
     }
 }
