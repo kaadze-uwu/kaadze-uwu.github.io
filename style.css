@@ -272,13 +272,12 @@ p {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
-    margin-left: 450px;
+    margin-left: 950px;
     margin-top: 10px;
 }
 
 .redes img {
     width: 35px;
-    transition: transform 0.3s ease;
 }
 
 .redes img:hover {
@@ -374,6 +373,6 @@ p {
         margin: 0 auto;
     }
     .redes {
-        margin-left: 200px
+        margin-left: 300px
     }
 }
