@@ -19,3 +19,4 @@ Lo que realizaré con este último lenguaje van a ser las siguientes cosas:
 + Un menú desplegable para móvil
 + Galerías para los trabajos en donde se verá cada trabajo uno por uno
 + Una galería en la que se verá cada opinión una por una
++ Un modal que, al enviar un formulario para el contacto, dirá si se ha enviado correctamente o no
