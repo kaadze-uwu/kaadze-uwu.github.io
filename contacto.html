@@ -10,7 +10,10 @@
         <div class="logo">
             <img src="IMAGENES/logo_def.png" alt="Logo">
         </div>
-        <div class="menu">
+
+        <button id="btnMenu" class="menu-desp">☰</button>
+
+        <div class="menu" id="menu">
             <a href="index.html">Inicio</a>
             <a href="sobre-mi.html">Sobre mí</a>
             <a href="contacto.html">Contáctame</a>
@@ -31,10 +34,14 @@
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-            <button type="submit">Enviar mensaje</button>
+            <button type="submit" onclick="modalEnvioOpen()">Enviar mensaje</button>
         </form>
+        <dialog id="modal">
+            <h1>¡No puedes hacer eso!</h1>
+            <p>El formulario que has enviado no está completo. Por favor, rellénalo entero.</p>
+            <button onclick="modalEnvioClose()">Aceptar</button>
+        </dialog>
     </div>
-
     <div class="footer">
         Todos los derechos reservados, 2025
         <div class="redes">
@@ -49,5 +56,6 @@
             </a>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
