@@ -284,6 +284,28 @@ p {
     transform: scale(1.2);
 }
 
+/* CSS Cosas JavaScript */
+.menu-desp {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#modal button {
+    background-color: rgb(0, 105, 61);
+    margin: 20px;
+    padding: 15px;
+    justify-self: center;
+    border-radius: 20px;
+}
+#modal button:hover{
+    background-color: rgb(11, 54, 36);
+    transform: scale(1.2);
+}
+
 /* Media queries para adaptar el sitio web */
 @media (max-width: 768px) {
     .cabeceraMain {
@@ -299,10 +321,20 @@ p {
         width: 120px;
     }
 
+    .menu-desp {
+        display:block;
+    }
+
     .menu {
+        display:none;
         flex-direction: column;
         gap: 10px;
-        padding-top: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu.mostrar {
+        display: flex;
     }
 
     .menu a {
