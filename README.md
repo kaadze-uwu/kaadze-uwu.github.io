@@ -13,3 +13,9 @@ También habrán otros elementos, como los siguientes:
 + Dentro del apartado "Contáctame", habrá un simple formulario en donde podrás rellenar tu información para poder contactarme.
 + En la página principal, un botón que dice "CONTÁCTAME!" que llevará directamente a ponerte en contacto conmigo.
 + Dentro de "Mis trabajos", habrá un portfolio más completo sobre todos los trabajos que he hecho.
+---
+Además de HTML y CSS, la landing page también dispondrá de JavaScript.
+Lo que realizaré con este último lenguaje van a ser las siguientes cosas:
++ Un menú desplegable para móvil
++ Galerías para los trabajos en donde se verá cada trabajo uno por uno
++ Una galería en la que se verá cada opinión una por una
