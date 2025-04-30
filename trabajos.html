@@ -12,8 +12,8 @@
         </div>
 
         <button id="btnMenu" class="menu-desp">☰</button>
-        
-        <div class="menu">
+
+        <div class="menu" id="menu">
             <a href="index.html">Inicio</a>
             <a href="sobre-mi.html">Sobre mí</a>
             <a href="contacto.html">Contáctame</a>
@@ -26,7 +26,8 @@
         <p>Aquí tienes un portfolio con todos los trabajos que he estado realizando <br>
         desde que comencé a ser desarrollador web independiente:</p>
         <div class="imagenes">
-            <div class="card">
+            <button id="anterior" aria-label="Anterior">⟨</button>
+            <div class="card" id="card">
                 <div class="imagen">
                     <a href="#"><img src="IMAGENES/foto_abogado.png"></a>
                 </div>
@@ -34,41 +35,9 @@
                     <h3>Buffet de abogados El Seguro</h3>
                 </div>
             </div>
-            <div class="card">
-                <div class="imagen">
-                    <a href="#"><img src="IMAGENES/imagen_restaurante.jpg"></a>
-                </div>
-                <div class="text">
-                    <h3>Restaurante El buen comer</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imagen">
-                    <a href="#"><img src="IMAGENES/imagen_floristeria.jpg"></a>
-                </div>
-                <div class="text">
-                    <h3>Floristería Mariluz S.L</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imagen">
-                    <a href="#"><img src="IMAGENES/fotografo.jpg"></a>
-                </div>
-                <div class="text">
-                    <h3>Fotografías Abel</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imagen">
-                    <a href="#"><img src="IMAGENES/hamburguesa.jpg"></a>
-                </div>
-                <div class="text">
-                    <h3>Hamburguesería Mumama Granada</h3>
-                </div>
-            </div>
+            <button id="siguiente" aria-label="Siguiente">⟩</button>
         </div>
     </div>
-
     <div class="footer">
         Todos los derechos reservados, 2025
         <div class="redes">
