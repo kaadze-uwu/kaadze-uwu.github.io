@@ -1,9 +1,12 @@
+// JAVASCRIPT BOTÓN MENÚ PARA MÓVILES EN LA LANDING PAGE
 const btnMenu = document.getElementById("btnMenu");
 const menu = document.getElementById("menu");
 
 btnMenu.addEventListener("click", () => {
     menu.classList.toggle("mostrar");
 });
+
+//JAVASCRIPT MODALES DE ENVÍO DE FORMULARIO CONTACTO.HTML
 
 function modalEnvioOpen(){
     const modal = document.querySelector("#modal");
@@ -15,7 +18,10 @@ function modalEnvioClose(){
     modal.close();
 }
 
-const contenedor = document.getElementById("card");
+// JAVASCRIPT CARRUSEL CON BOTONES PORTFOLIO TRABAJOS.HTML
+
+const card = document.getElementById("card");
+if (card) {
 const anterior = document.getElementById("anterior");
 const siguiente = document.getElementById("siguiente");
 
@@ -46,7 +52,7 @@ let indiceActual = 0;
 
 function mostrarTarjeta(indice) {
     const tarjeta = tarjetas[indice];
-    contenedor.innerHTML = `
+    card.innerHTML = `
         <div class="tarjeta">
             <img src="${tarjeta.imagen}" alt="${tarjeta.titulo}">
             <h3>${tarjeta.titulo}</h3>
@@ -70,3 +76,43 @@ setInterval(() => {
 }, 5000);
 
 mostrarTarjeta(indiceActual);
+  
+}
+
+// JAVASCRIPT CARRUSEL TESTIMONIOS INDEX.HTML
+
+document.addEventListener("DOMContentLoaded", function () {
+    const testimonios = [
+        {
+            texto: "Increíble trabajo, rápido y profesional. Lo recomiendo al 100%",
+            autor: "- Marta"
+        },
+        {
+            texto: "Mi sitio web quedó espectacular. Izan realizó justo lo que quería.",
+            autor: "- Laura Martínez"
+        },
+        {
+            texto: "Atención personalizada y mucha dedicación",
+            autor: "- Pedro R."
+        }
+    ];
+
+    let indiceTestimonio = 0;
+    const testimonio = document.getElementById("carrusel-testimonios");
+
+    function mostrarTestimonio(indice) {
+        const te = testimonios[indice];
+        testimonio.innerHTML = `
+            <p class="texto-testimonio">"${te.texto}"</p>
+            <p class="autor-testimonio">${te.autor}</p>
+            <img src="IMAGENES/5_ESTRELLAS.webp" alt="Valoración de 5 estrellas" class="estrellas-testimonio">
+        `;
+    }
+
+    mostrarTestimonio(indiceTestimonio);
+
+    setInterval(() => {
+        indiceTestimonio = (indiceTestimonio + 1) % testimonios.length;
+        mostrarTestimonio(indiceTestimonio);
+    }, 5000);
+});
