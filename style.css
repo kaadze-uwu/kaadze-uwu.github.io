@@ -170,20 +170,28 @@ p {
     background-size: cover;
 }
 
-.testimoniosMain h2 {
-    margin-bottom: 20px;
-}
-
-.testimoniosMain img {
-    width: 200px;
-    align-items: center;
-}
-
 .testimonio {
     background-color:rgb(45, 168, 111);
     margin: 10px 0;
     padding: 15px;
     border-left: 4px solid rgb(0, 0, 0);
+}
+
+.texto-testimonio {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.autor-testimonio {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.estrellas-testimonio {
+    width: 120px;
+    margin-top: 10px;
 }
 
 /* CSS Galería (index.html y trabajos.html) */
@@ -279,6 +287,11 @@ p {
 .footer text {
     color: black;
 }
+
+.footer img {
+    margin-left: 50px;
+    width: 50px;
+} 
 
 /* CSS Cosas JavaScript */
 .menu-desp {
