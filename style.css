@@ -303,6 +303,15 @@ p {
     cursor: pointer;
 }
 
+#modal {
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    max-width: 90%;
+}
+
 #modal button {
     background-color: rgb(0, 105, 61);
     margin: 20px;
@@ -314,8 +323,6 @@ p {
     background-color: rgb(11, 54, 36);
     transform: scale(1.2);
 }
-
-
 
 /* Media queries para adaptar el sitio web */
 @media (max-width: 768px) {
