@@ -8,10 +8,25 @@ btnMenu.addEventListener("click", () => {
 
 //JAVASCRIPT MODALES DE ENVÍO DE FORMULARIO CONTACTO.HTML
 
-function modalEnvioOpen(){
-    const modal = document.querySelector("#modal");
-    modal.showModal();
-}
+const formulario = document.querySelector(".formulario");
+
+    if (formulario) {
+        formulario.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById("nombre").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const mensaje = document.getElementById("mensaje").value.trim();
+            const modal = document.getElementById("modal");
+            const modalMensaje = document.getElementById("modal-mensaje");
+
+            if (nombre && email && mensaje) {
+                document.getElementById("modal-mensaje").innerHTML = "¡Tu formulario se ha enviado correctamente!";
+            }
+
+            modal.showModal();
+        });
+    }
 
 function modalEnvioClose(){
     const modal = document.querySelector("#modal");
